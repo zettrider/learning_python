@@ -22,8 +22,6 @@ D.  Print a table that looks like the following (columns 20 characters in width)
 
 network_raw = input("Please enter the first three or all four IPv4 Address Segments:\n")
 
-print("The Input is: %s" %network_raw)
-
 network_list = network_raw.split(".")
 
 if len(network_list) == 4:
