@@ -20,8 +20,3 @@ for i in range (0, len(network_list)):
     #print(network_list[i])
     octet = bin(int(network_list[i]))
     print("%20s" %octet, end="" )
-
-#first_octet_binary = (bin(int(network_list[0])))
-
-#print("%20s %20s %20s" % ("NETWORK_NUMBER", "FIRST_OCTET_BINARY", "FIRST_OCTET_HEX"))
-#print("%20s %20s %20s" % (network_address, first_octet_binary, first_octet_hex))
