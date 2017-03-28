@@ -19,17 +19,20 @@ I. Create an IP address converter (dotted decimal to binary).  This will be simi
 
 import sys
 
-print(sys.argv[1])
+if len(sys.argv) < 2:
+    print("Please input valid IP address as argument.")
+elif len (sys.argv) > 2:
+    print("Please give one valid IP address as argument.")
+else:
+    network_raw = sys.argv[1]
 
-network_raw = sys.argv[1]
+    network_list = network_raw.split(".")
+    octet_binary = []
 
-network_list = network_raw.split(".")
-octet_binary = []
+    for i in range (0, len(network_list)):
+        #print(network_list[i])
+        octet = bin(int(network_list[i]))
+        octet_binary.append(format(int(network_list[i]), '08b'))
 
-for i in range (0, len(network_list)):
-    #print(network_list[i])
-    octet = bin(int(network_list[i]))
-    octet_binary.append(format(int(network_list[i]), '08b'))
-
-print("%-20s %s" % ("IP address", "Binary"))
-print("%-20s %s" % (sys.argv[1], ".".join(octet_binary)))
+    print("%-20s %s" % ("IP address", "Binary"))
+    print("%-20s %s" % (sys.argv[1], ".".join(octet_binary)))
