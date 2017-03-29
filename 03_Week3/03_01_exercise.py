@@ -6,7 +6,8 @@ I. Create an IP address converter (dotted decimal to binary).  This will be simi
 
     B. Simplify the script logic by using the flow-control statements that we learned in this class.
 
-    C. Zero-pad the digits such that the binary output is always 8-binary digits long.  Strip off the leading '0b' characters.  For example,
+    C. Zero-pad the digits such that the binary output is always 8-binary digits long.  
+       Strip off the leading '0b' characters.  For example,
 
         OLD:     0b1010
         NEW:    00001010
