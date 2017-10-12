@@ -33,16 +33,3 @@ else:
         print('%s is valid' % sys.argv)
     else:
         print('not_valid')
-
-#print(network_list[0:2])
-#print(network_list)
-
-#print(0 < (int(network_list[1]) < 255))
-
-
-'''
-for i in range (1,4):
-    print(i)
-    print(network_list[i])
-    print(0 <= (int(network_list[i])) <= 255)
-'''
